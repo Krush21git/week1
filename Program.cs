@@ -10,7 +10,7 @@ try
     square.SetArea(2);
 
 
-    Console.WriteLine("The area is " + square.GetArea());
+    Console.WriteLine("The area of Square is " + square.GetArea());
 }
 catch(Exception ex)
 {
@@ -20,12 +20,11 @@ catch(Exception ex)
 
 
 
-var circle = new Circle();
+var circle = new Circle(4);
+
+Console.WriteLine(" The area of Circle is " + circle.GetArea());
 
 ShapeColourHelper.AddColour(circle);
-
-
-
 
 
 ShapeColourHelper.AddColour(square);
