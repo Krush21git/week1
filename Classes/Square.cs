@@ -5,7 +5,7 @@ namespace Week1ObjectOriented.Classes
 {
     public class Square : Shape, IFaces
     {
-        private int side;
+        public int side;
 
         public Square(int s) 
         {
@@ -25,7 +25,7 @@ namespace Week1ObjectOriented.Classes
             side = s;
         }
 
-        public override int GetArea()
+        public override double GetArea()
         {
             return side * side; 
         }
